@@ -6,6 +6,9 @@ on:
       - main # Change this to your main branch if different
   workflow_dispatch: # Allows manual triggering of the workflow
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
